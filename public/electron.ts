@@ -3,6 +3,8 @@ const path = require("path");
 const { app, BrowserWindow } = require("electron");
 const isDev = require("electron-is-dev");
 
+const pty = require("node-pty");
+
 function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
